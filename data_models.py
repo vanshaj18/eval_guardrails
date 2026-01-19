@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: Copyright (c) 2025-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-FileCopyrightText: Copyright (c) 2026. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 
 from typing import Any, Callable, Awaitable, TypeVar, Generic, Protocol, runtime_checkable, Optional
