@@ -1,0 +1,77 @@
+[
+    {
+      "model_provider": "OpenAI",
+      "variants": [
+        {
+          "model_name": "gpt-5",
+          "input_cost_per_1k": 0.00125,
+          "output_cost_per_1k": 0.01
+        },
+        {
+          "model_name": "gpt-5-mini",
+          "input_cost_per_1k": 0.00025,
+          "output_cost_per_1k": 0.002
+        },
+        {
+          "model_name": "gpt-4o",
+          "input_cost_per_1k": 0.0025,
+          "output_cost_per_1k": 0.01
+        },
+        {
+          "model_name": "o1",
+          "input_cost_per_1k": 0.015,
+          "output_cost_per_1k": 0.06
+        }
+      ]
+    },
+    {
+      "model_provider": "Anthropic",
+      "variants": [
+        {
+          "model_name": "claude-sonnet-4.5",
+          "input_cost_per_1k": 0.003,
+          "output_cost_per_1k": 0.015
+        },
+        {
+          "model_name": "claude-opus-4.5",
+          "input_cost_per_1k": 0.005,
+          "output_cost_per_1k": 0.025
+        },
+        {
+          "model_name": "claude-haiku-4.5",
+          "input_cost_per_1k": 0.001,
+          "output_cost_per_1k": 0.005
+        }
+      ]
+    },
+    {
+      "model_provider": "Google",
+      "variants": [
+        {
+          "model_name": "gemini-3-pro",
+          "input_cost_per_1k": 0.002,
+          "output_cost_per_1k": 0.012
+        },
+        {
+          "model_name": "gemini-3-flash",
+          "input_cost_per_1k": 0.0005,
+          "output_cost_per_1k": 0.003
+        }
+      ]
+    },
+    {
+      "model_provider": "Mistral",
+      "variants": [
+        {
+          "model_name": "mistral-large-latest",
+          "input_cost_per_1k": 0.002,
+          "output_cost_per_1k": 0.006
+        },
+        {
+          "model_name": "mistral-small-latest",
+          "input_cost_per_1k": 0.0001,
+          "output_cost_per_1k": 0.0003
+        }
+      ]
+    }
+  ]
