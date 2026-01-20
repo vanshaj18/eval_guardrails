@@ -27,6 +27,8 @@ class TokenUsage(BaseModel):
     output_tokens: int = 0
     total_tokens: int = 0
     estimated_cost: float = 0.0
+    carbon_emissions_g: float = 0.0
+    energy_kwh: float = 0.0
     model_name: str | None = None
 
 class ProfileResult(BaseModel):

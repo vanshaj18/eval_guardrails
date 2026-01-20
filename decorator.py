@@ -101,7 +101,8 @@ def guardrail(
                         logger.info(
                             f"Token Utilization [{model_name}]: "
                             f"Input: {usage.input_tokens}, Output: {usage.output_tokens}, "
-                            f"Total: {usage.total_tokens}, Estimated Cost: ${usage.estimated_cost:.6f}"
+                            f"Total: {usage.total_tokens}, Estimated Cost: ${usage.estimated_cost:.6f}, "
+                            f"Carbon: {usage.carbon_emissions_g:.4f}g CO2e"
                         )
                         # Optionally attach usage to output if it's a dict and not already present
                         if isinstance(output, dict) and "usage" not in output:

@@ -1,0 +1,52 @@
+[
+  {
+    "model_provider": "openai",
+    "variants": [
+      {
+        "model_name": "gpt-4",
+        "energy_factor_wh_per_1k": 0.4, 
+        "sustainability_tier": "C"
+      },
+      {
+        "model_name": "gpt-4o",
+        "energy_factor_wh_per_1k": 0.2,
+        "sustainability_tier": "B"
+      },
+      {
+        "model_name": "gpt-3.5-turbo",
+        "energy_factor_wh_per_1k": 0.04,
+        "sustainability_tier": "A"
+      }
+    ]
+  },
+  {
+    "model_provider": "anthropic",
+    "variants": [
+      {
+        "model_name": "claude-haiku",
+        "energy_factor_wh_per_1k": 0.03,
+        "sustainability_tier": "A+"
+      }
+    ]
+  },
+  {
+    "model_provider": "meta",
+    "variants": [
+      {
+        "model_name": "llama-3-70b",
+        "energy_factor_wh_per_1k": 0.35,
+        "sustainability_tier": "C"
+      }
+    ]
+  },
+  {
+    "model_provider": "google",
+    "variants": [
+        {
+            "model_name": "gemini-2.5-flash",
+            "energy_factor_wh_per_1k": 0.35,
+            "sustainability_tier": "C"
+        }
+    ]
+  }
+]

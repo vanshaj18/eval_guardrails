@@ -3,6 +3,7 @@
 
 from .decorator import guardrail
 from .checks import check_injection, check_pii
+from .sustainability import check_prompt_efficiency, sustainability_calculator
 from .data_models import (
     OnFailAction, 
     GuardrailResult, 
@@ -19,6 +20,8 @@ __all__ = [
     "guardrail",
     "check_injection",
     "check_pii",
+    "check_prompt_efficiency",
+    "sustainability_calculator",
     "OnFailAction",
     "GuardrailResult",
     "GuardrailException",

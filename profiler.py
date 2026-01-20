@@ -6,6 +6,7 @@ import os
 from typing import Any, Optional
 from pathlib import Path
 from .data_models import TokenUsage
+from .sustainability.calculator import sustainability_calculator
 
 class TokenProfiler:
     def __init__(self, token_details_path: Optional[str] = None):
@@ -50,11 +51,19 @@ class TokenProfiler:
             output_cost = (output_tokens / 1000) * info["output_cost_per_1k"]
             cost = input_cost + output_cost
         
+        # Calculate sustainability metrics
+        sustainability = sustainability_calculator.calculate_emissions(
+            total_tokens=total_tokens,
+            model_name=model_name
+        )
+        
         return TokenUsage(
             input_tokens=input_tokens,
             output_tokens=output_tokens,
             total_tokens=total_tokens,
             estimated_cost=cost,
+            carbon_emissions_g=sustainability["carbon_g"],
+            energy_kwh=sustainability["energy_kwh"],
             model_name=model_name
         )
 
