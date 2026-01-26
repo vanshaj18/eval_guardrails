@@ -1,6 +1,6 @@
 # LLM Guardrails & Profiling Toolkit
 
-A lightweight, extensible toolkit for adding safety checks, output validation, and cost profiling to your LLM-based applications.
+A lightweight, extensible toolkit for adding safety checks, output validation, and cost profiling to your LLM-based applications. (Active developement)
 
 ## Features
 
